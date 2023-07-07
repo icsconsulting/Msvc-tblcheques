@@ -34,7 +34,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .antMatchers("/app/authenticate").permitAll()
                 .antMatchers("/app/usuario/**").hasAuthority("admin")
-                .antMatchers("/app/getTblCheque").hasAnyAuthority("admin","owner","consulta")
+                .antMatchers("/app/getTblCheque").hasAnyAuthority("admin","owner","user")
                 .antMatchers("/app/saveTblCheque").hasAnyAuthority("admin","owner")
 
                 .anyRequest().authenticated()

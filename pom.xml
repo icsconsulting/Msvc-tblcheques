@@ -71,7 +71,7 @@
     </dependencies>
 
 	<build>
-		<finalName>msvc-tblcheques-r1</finalName>
+		<finalName>msvctblcheques</finalName>
 		<plugins>
 			<plugin>
 				<groupId>com.github.ulisesbocchio</groupId>
